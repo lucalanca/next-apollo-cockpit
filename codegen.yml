@@ -1,0 +1,19 @@
+schema: "https://ginetta.cockpit.rocks/cockpitql/api/graphql?token=account-1f4269e927c90b0a0474f4796187c8"
+overwrite: true
+generates:
+  generated/common.ts:
+    plugins:
+      - add: "// THIS IS A GENERATED FILE, DO NOT EDIT IT!"
+      - typescript-common
+  generated/client.ts:
+    plugins:
+      - add: "// THIS IS A GENERATED FILE, DO NOT EDIT IT!"
+      - typescript-client
+  generated/react-apollo.tsx:
+    plugins:
+      - add: "// THIS IS A GENERATED FILE, DO NOT EDIT IT!"
+      - typescript-react-apollo
+  generated/cockpit.ts:
+    plugins:
+      - add: "// THIS IS A GENERATED FILE, DO NOT EDIT IT!"
+      - graphql-codegen-cockpit.js
